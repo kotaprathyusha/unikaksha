@@ -1,0 +1,86 @@
+#Series I
+n=int(input())
+for i in range(1,n+1):
+    p=(i**2)
+    print(p, end = " ")
+    
+#Series II
+n=int(input())
+s=6
+for i in range(0,n):
+    s=s+(5*i)
+    print(s,end = " ")
+    
+#Series III
+n=int(input())
+for i in range(1,n+1):
+    p=3**i
+    print(p,end =" ")
+
+#Series IV
+n=int(input())
+x=0.5
+for i in range(0,n):
+    p=(0.5*(3**i))
+    print(p ,end= " ")
+   
+#Series V
+n=int(input())
+a=11
+b=4
+for i in range(1,n+1):
+    mul=a**2
+    print(mul ,end=" ")
+    a=a+b
+    
+ #Series VI
+ gvn_number=int(input())
+itr=1
+previous_val=0
+while itr<=gvn_number:
+    if(itr%2==0):
+        previous_val=pow(itr,2)-2
+        print(previous_val,end= " ")
+    else:
+        previous_val=pow(itr,2)-1
+        print(previous_val,end= " ")
+    itr+=1    
+
+#Series VII
+n=int(input())
+a=1
+b=2.0
+print(a,b,end =" ")
+for i in range(3,n+1):
+    if(i%2==1):
+        a=a*3
+        print(float (a) ,end =" ")
+    else:
+        b=b*3
+        print(float(b),end =" ")
+  
+ #Series VIII
+ n=int(input())
+a=4
+print(a,end =" ")
+for i in range(1,n):
+    a=a+(i**2)
+    print(a,end = " ")
+    
+#Series IX
+n=int(input())
+a=2
+print(a,end = " ")
+for i in range(1,n):
+    a=(a**2)-1
+    print(a , end = " ")
+    Series X
+#series X
+n=int(input())
+a=95.0
+b=18.5
+print(a,end = " ")
+for i in range(1,n):
+    a=a+b+(2*i)
+    print(float(a),end = " ")
+
