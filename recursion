@@ -1,0 +1,24 @@
+#LCM of two numbers
+def lcm(x,y):
+    if(x>y):
+        higher=x
+    else:
+        higher=y
+    value=higher
+    while (1):
+        if(higher%x==0 and higher%y==0):
+            print(higher)
+            break
+        higher=higher+1
+x=int(input())
+y=int(input())
+lcm(x,y)
+
+#Decimal to Binary
+def dectobin(n):
+    if(n>1):
+        dectobin(n//2)
+    print(n%2,end ="")
+n=int(input())
+dectobin(n)
+
