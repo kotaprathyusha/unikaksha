@@ -1,0 +1,175 @@
+#Amoeba Multiplication
+def ame(m):
+    a=0
+    b=1
+    for i in range (2,m):
+        c=a+b
+        a=b
+        b=c
+    print("The amoeba size is",c)
+print("Enter the number of Months :")
+m=int(input())
+ame(m)
+
+#
+import math
+n=int(input())
+for i in range(1,n+1):
+    p=math.factorial(i)
+    if(p==n):
+        print("yes")
+        break
+else:
+    print("no")
+    
+#Sum of Digits    
+def num(n):
+    sum=0
+    while(n!=0):
+        r=n%10
+        sum=sum+r
+        n=n//10
+    print(sum)
+n=int(input())
+num(n)
+    
+#Friendly Pair
+x=int(input())
+y=int(input())
+sum1=0
+sum2=0
+for i in range (1,x):
+    if(x%i==0):
+        sum1=sum1+i
+for j in range(1,y):
+    if(y%j==0):
+        sum2=sum2+j
+if(sum1==x and sum2==y):
+    print("Friendly Pair")
+else:
+    print("Not Friendly Pair")
+
+#Harshard Number  
+x=int(input())
+n=x
+sum=0
+while(n!=0):
+    r=n%10
+    sum=sum+r
+    n=n//10
+if(x%sum==0):
+    print("Harshad Number")
+else:
+    print("Not Harshad Number")
+    
+ # lcm
+ def lcm(n1 ,n2):
+    if(n1>n2):
+        higher=n1
+    else:
+        higher=n2
+    value = higher
+    while True:
+        if(higher%n1==0  and higher%n2==0):
+            print("LCM of",n1 ,"and",n2,"is",higher)
+            break
+        higher=higher+1
+n1=int(input())
+n2=int(input())
+lcm(n1,n2)
+
+#Palindrome of a number
+
+      def pali(x):
+    n=x
+    rev=0
+    while(n>0):
+        r=n%10
+        rev=rev*10+r
+        n=n//10
+    if(x==rev):
+        print("Palindrome")
+    else:
+        print("Not a Palindrome")
+x=int(input())
+pali(x)
+
+#Perfect Number
+def perfect (n):
+    sum=0
+    for i in range(1,n):
+        if(n%i==0):
+            sum=sum+i
+    if(sum==n):
+        print("Perfect Number")
+    else:
+        print("Not a Perfect Number")
+n=int(input())
+perfect(n)
+
+#Prime Number
+n=int(input())
+for i in range(2,n):
+    if(n%i==0):
+        print("Not a Prime")
+        break
+else:
+    print("Prime Number")
+
+#Prime Numbers in a Range
+x=int(input())
+y=int(input())
+for val in range(x,y):
+    if val>1:
+        for i in range(2,val):
+            if(val%i==0):
+                break
+        else:
+            print(val)
+    
+ #Reverse a Number
+ def rn (n):
+    rev=0
+    while(n!=0):
+        r=n%10
+        rev =rev*10+r
+        n=n//10
+    print(rev)
+n=int(input())
+rn(n)
+    
+#Strong Number
+import math
+def fact(x):
+    n=x
+    sum=0
+    while(n>0):
+        r=n%10
+        p=math.factorial(r)
+        sum=sum+p
+        n=n//10
+    if(x==sum):
+        print("Strong Number")
+    else:
+        print("Not a Strong Number")
+x=int(input())
+fact(x)
+        
+#Sum on=int(input())
+p=(n*(n+1))
+w=p/2
+print(int(w))
+
+#Sum of Numbers in a range
+x=int(input())
+y=int(input())
+sum=0
+for i in range(x,y+1):
+    sum=sum+i
+print(sum)
+
+
+
+ 
+
+
